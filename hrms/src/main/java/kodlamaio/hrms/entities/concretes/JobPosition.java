@@ -29,6 +29,6 @@ public class JobPosition {
 	@Column(name="position_name")
 	private String positionName;
 	
-	@OneToMany(mappedBy="department")
+	@OneToMany(mappedBy="jobPosition")
 	private List<JobAnnouncement> jobAnnouncements;
 }
